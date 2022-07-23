@@ -115,6 +115,84 @@
           </li>
         </ol>
       </header>
+
+      <div class="catalog">
+        <div class="catalog-wrap container">
+
+          <section class="catalog-filter">
+            <h2 class="filter-title">Фильтр:</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="filter filter-price">
+                <legend>Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left:-9px; width: 119px;">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="filter filter-color">
+                <legend>Цвет</legend>
+                <label class="choice">
+                  <input class="choice-input visually-hidden" type="checkbox" name="black" checked>
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Черный</span>
+                </label>
+                <label class="choice">
+                  <input class="choice-input visually-hidden" type="checkbox" name="white" checked>
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Белый</span>
+                </label>
+                <label class="choice">
+                  <input class="choice-input visually-hidden" type="checkbox" name="blue">
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Синий</span>
+                </label>
+                <label class="choice">
+                  <input class="choice-input visually-hidden" type="checkbox" name="red">
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Красный</span>
+                </label>
+                <label class="choice">
+                  <input class="choice-input visually-hidden" type="checkbox" name="rose">
+                  <span class="choice-mark choice-mark-checkbox"></span>
+                  <span class="choice-label">Розовый</span>
+                </label>
+              </fieldset>
+              <fieldset class="filter filter-bluetooth">
+                <legend>Bluetooth</legend>
+                <label class="choice bluetooth-choice">
+                  <input class="choice-input visually-hidden" type="radio" name="bluetooth" value="yes" checked>
+                  <span class="choice-mark choice-mark-radio"></span>
+                  <span class="choice-label">Есть</span>
+                </label>
+                <label class="choice bluetooth-choice">
+                  <input class="choice-input visually-hidden" type="radio" name="bluetooth" value="no">
+                  <span class="choice-mark choice-mark-radio"></span>
+                  <span class="choice-label">Нет</span>
+                </label>
+              </fieldset>
+              <button class="button-filter-show button link" type="submit">Показать</button>
+            </form>
+          </section>
+
+        </div>
+      </div>
     </main>
   </body>
 
