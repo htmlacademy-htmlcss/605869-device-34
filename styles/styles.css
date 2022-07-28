@@ -803,7 +803,7 @@ body {
   line-height: 24px;
   letter-spacing: -0.02em;
   text-decoration: none;
-  color:#000000;
+  color: #000000;
 }
 
 .category-item:hover {
@@ -833,6 +833,189 @@ body {
 
 .category-monopod img {
   margin-bottom: 0;
+}
+
+/* Services */
+
+.services {
+  background-color: #F0F0F0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.services::after {
+  height: 30px;
+  background-color: #ffffff;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.services-container {
+  position: relative;
+  top: -102px;
+  display: flex;
+}
+
+.services-slider {
+  position: relative;
+  margin: 0;
+  padding: 64px 0;
+  width: 289px;
+  flex-shrink: 0;
+  list-style-type: none;
+  border-right: 7px solid #000000;
+}
+
+.services-slider li:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.service-button {
+  width: 160px;
+  padding: 10px 0;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+}
+
+.service-button-active {
+  width: 100%;
+  padding-left: 16px;
+  text-align: left;
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.service-button-active:hover {
+  color: rgb(255 225 127 / 0.5);
+}
+
+.service-button-active:active {
+  color: rgb(255 225 127 / 0.3);
+}
+
+.service-button-active:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+}
+
+.services-list {
+  margin: 72px 63px 72px 116px;
+  padding: 0;
+  list-style-type: none;
+  flex-grow: 1;
+  position: relative;
+}
+
+.service-list-item::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: -36px;
+  width: 170px;
+  height: 164px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-list-delivery::after {
+  background-image: url("../images/delivery.svg");
+}
+
+.service-title {
+  width: 475px;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.service-text {
+  width: 475px;
+  margin: 0;
+  color: #444444;
+}
+
+.service-list-warranty::after {
+  background-image: url("../images/warranty.svg");
+}
+
+.service-list-credit::after {
+  background-image: url("../images/credit.svg");
+}
+
+.delivery-banner {
+  position: relative;
+  margin-bottom: 70px;
+  background-color: #F0F0F0;
+}
+
+.delivery-slogan {
+  display: block;
+  margin: 0;
+  padding: 40px 80px 38px 140px;
+  color: #000000;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.delivery-slogan::before {
+  position: absolute;
+  content: "";
+  width: 125px;
+  height: 100%;
+  padding: 0;
+  left: 0;
+  top: 0;
+  background-color: #FFE17F;
+  background-image: url("../images/icons/delivery-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 47px 31px;
+}
+
+.delivery-slogan:hover:before {
+  background-color: #FFC700;
+}
+
+.delivery-slogan:active {
+  opacity: 0.3;
+}
+
+.delivery-slogan:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+}
+
+.delivery-slogan:focus .delivery-i-icon {
+  opacity: 1;
+}
+
+.delivery-i {
+  position: absolute;
+  top: 30px;
+  right: 42px;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(220 220 220 / 0.5);
+}
+
+.delivery-i-icon {
+  width: 2px;
+  height: 12px;
+  opacity: 0.3;
 }
 
 /* Footer */
