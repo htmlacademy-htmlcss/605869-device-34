@@ -1018,6 +1018,124 @@ body {
   opacity: 0.3;
 }
 
+/* About */
+
+.about-container {
+  display: flex;
+  margin-bottom: 70px;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 520px;
+}
+
+.about-title {
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.about-text {
+  margin-bottom: 26px;
+}
+
+.about-text-paragraph {
+  font-style: normal;
+  color: #444444;
+  margin: 0;
+}
+
+.about-text-paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about-companies {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-companies li {
+  margin-bottom: 9px;
+}
+
+.about-companies li:last-child {
+  margin-bottom: 0;
+}
+
+.companies-item {
+  position: relative;
+  padding-left: 37px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.companies-item:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFC700;
+}
+
+.button-about-detailed {
+  width: 270px;
+}
+
+.about-contacts {
+  width: 532px;
+}
+
+.about-contacts h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #444444;
+}
+
+.about-us::before,
+.about-contacts::before {
+  display: block;
+  margin-bottom: 40px;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+}
+
+.about-text-contacts {
+  font-style: normal;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-tel {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.about-tel:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+}
+
+.about-worktime {
+  margin-bottom: 30px;
+}
+
+.button-about-mailus {
+  width: 260px;
+}
+
 /* Footer */
 
 .main-footer {
