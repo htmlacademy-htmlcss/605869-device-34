@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Игорь Русалеев](https://up.htmlacademy.ru/htmlcss/34/user/605869).
-* Наставник: `Неизвестно`.
+* Студент: [Игорь Русалеев](https://htmlacademy.ru/profile/dzaan).
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
