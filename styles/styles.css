@@ -1130,7 +1130,7 @@ body {
 /* Subscription */
 
 .subscription {
-  background-color:#F0F0F0;
+  background-color: #F0F0F0;
 }
 
 .subscription .container {
@@ -1293,6 +1293,250 @@ body {
 .breadcrumbs-link:focus {
   outline: 2px solid rgb(175 79 255);
   outline-offset: 2px;
+}
+
+.catalog {
+  background-color: #F0F0F0;
+}
+
+.catalog-wrap {
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
+  padding: 23px 40px 25px 60px;
+}
+
+.catalog-filter h2 {
+  margin: 0;
+  margin-bottom: 72px;
+}
+
+.filter-title {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.filter {
+  position: relative;
+  border: none;
+  margin: 0;
+  margin-bottom: 47px;
+  padding: 0;
+}
+
+.filter::before {
+  content: "";
+  position: absolute;
+  top: -58px;
+  left: 0;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.filter:last-of-type {
+  margin-bottom: 31px;
+}
+
+.filter legend {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.filter label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 15px;
+  background-color: #DCDCDC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #F0F0F0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #EBEBEB;
+  border: 2px solid rgb(0 0 0 / 0.5);
+}
+
+.range-toggle:active {
+  background: #000000;
+  border: 2px solid #000000;
+}
+
+.range-toggle:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -18px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin-left: -15px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-filter-label:focus-within {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+.range-input {
+  width: 80px;
+  padding: 0 4px;
+  font: inherit;
+  border: none;
+  appearance: textfield;
+  background-color: transparent;
+}
+
+.range-input:focus {
+  outline: none;
+}
+
+.filter-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.choice:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.choice {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.choice-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CCCCCC;
+}
+
+.choice-mark-checkbox {
+  border-radius: 3px;
+}
+
+.choice-mark-radio {
+  border-radius: 50%;
+}
+
+.choice:hover {
+  opacity: 0.6;
+}
+
+.choice:active {
+  opacity: 0.3;
+}
+
+.choice:focus-within .choice-mark {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+.choice-input:checked:focus + .choice-mark {
+  border: 2px solid #000000;
+}
+
+.choice-input:disabled + .choice-mark + .choice-label {
+  opacity: 0.1
+}
+
+.choice-input[type="checkbox"]:checked + .choice-mark::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background-image: url("../images/icons/checked-icon.svg");
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.choice-input[type="radio"]:checked + .choice-mark::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 8px;
+  height: 8px;
+  content: "";
+  background-color: #242424;
+  border-radius: 50%;
+}
+
+.filter-bluetooth {
+  display: flex;
+  flex-direction: column;
+}
+
+.bluetooth-choice:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.button-filter-show {
+  width: 220px;
 }
 
 /* Footer */
