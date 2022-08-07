@@ -583,10 +583,6 @@ body {
   margin-left: 0;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 /* Slider */
 
 .slider {
@@ -1243,6 +1239,60 @@ body {
   width: 14px;
   height: 14px;
   content: url("../images/icons/tick.svg");
+}
+
+/* Catalog */
+
+.catalog-header {
+  padding: 33px 60px;
+}
+
+.catalog-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  content: url("../images/breadcrumbs.svg");
+  width: 4px;
+  height: 7px;
+  right: 16px;
+  top: -2px;
+  opacity: 0.2;
+}
+
+.breadcrumbs-link {
+  margin-right: 36px;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid rgb(175 79 255);
+  outline-offset: 2px;
 }
 
 /* Footer */
